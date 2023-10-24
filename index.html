@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie - API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    <img src="images/logo.png" height="40">
+                </div>
+                <nav>
+                    <ul>
+                        <i class="fa fa-search"></i>
+                        <li><input type="text" id="search" placeholder="Search"></li>
+                        <li><button class="btn" onclick="getMovieInfo()">Fetch</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="items">
+                <div class="w-4">
+                    <img src="images/Image-Not-Available.png" id="poster" height="600">
+                </div>
+                <div class="w-6">
+                    <div class="movieTitle">
+                        <h1 id="movieName">. . . . .</h1>
+                        <div class="details">
+                            <div class="year" id="year">0000</div>
+                            <div class="convert">|</div>
+                            <div class="duration" id="duration">00 min</div>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <div class="top">OVERVIEW</div>
+                        <div class="plot" id="plot">. . . . .</div>
+                        <div class="about">
+                            <div class="stars">
+                                <div class="star1">Stars</div>
+                                <div class="star2" id="actor">. . . . .</div>
+                            </div>
+                            <div class="creator">
+                                <div class="create1">Created By</div>
+                                <div class="create2" id="director">. . . . .</div>
+                            </div>
+                            <div class="genre">
+                                <div class="genre1">Genre</div>
+                                <div class="genre2" id="genre">. . . . .</div>
+                            </div>
+                            <div class="country">
+                                <div class="country1">Country</div>
+                                <div class="country2" id="country">. . . . .</div>
+                            </div>
+                            <div class="date">
+                                <div class="date1">Released </div>
+                                <div class="date2" id="released">. . . . .</div>
+                            </div>
+                            <div class="language">
+                                <div class="lang1">Language </div>
+                                <div class="lang2" id="lang">. . . . .</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
